@@ -9,4 +9,4 @@ gtts==2.5.3
 langdetect==1.0.9
 deep-translator==1.11.4
 pillow==10.4.0
-typing-extensions==4.5.0
+typing-extensions==4.6.1
