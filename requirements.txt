@@ -3,7 +3,7 @@ llama-index==0.6.30
 langchain==0.0.318
 streamlit-authenticator==0.3.3
 pydantic==2.0.3 
-PyPDF2==3.0.1
+PyPDF2
 python-docx==1.1.2
 gtts==2.5.3
 langdetect==1.0.9
