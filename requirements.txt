@@ -1,5 +1,6 @@
 streamlit
 llama-index
+llama_index.llms.together
 langchain
 streamlit-authenticator
 pydantic 
