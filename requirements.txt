@@ -2,6 +2,7 @@ streamlit
 llama-index
 llama_index.llms.together
 langchain
+langchain_community.embeddings
 streamlit-authenticator
 pydantic 
 PyPDF2
