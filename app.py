@@ -16,7 +16,7 @@ def main():
         login()
     elif st.session_state.stage == "otp_verification":
         otp_verification()
-    elif st.session_state.logged_in:
+    elif st.session_state.get('logged_in', False):
         dashboard()
 
 if __name__ == "__main__":
