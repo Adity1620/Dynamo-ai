@@ -1,4 +1,5 @@
 streamlit==1.38.0
+pydantic==2.0.3
 llama-index
 llama_index.llms.together
 langchain==0.0.318
