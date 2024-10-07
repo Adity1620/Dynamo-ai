@@ -11,7 +11,18 @@ import docx
 from gtts import gTTS
 from langdetect import detect
 from deep_translator import GoogleTranslator
-from llama_index.core import VectorStoreIndex, StorageContext, Document
+
+try:
+    from llama_index.core import VectorStoreIndex, StorageContext, Document
+except PermissionError:
+    import nltk
+    from nltk.corpus import stopwords
+    
+    nltk.download('punkt')
+    nltk.download('stopwords')
+
+    from llama_index.core import VectorStoreIndex, StorageContext, Document
+
 from llama_index.llms.together import TogetherLLM
 from llama_index.core.node_parser import SentenceSplitter
 from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
@@ -19,11 +30,7 @@ import textwrap
 from llama_index.core import Settings
 from utils import load_login_data
 import translation as t
-import nltk
-from nltk.corpus import stopwords
 
-nltk.download('punkt')
-nltk.download('stopwords')
 
 LANGUAGE_CODES = {
     'en': 'English', 'hi': 'Hindi', 'mr': 'Marathi', 'bn': 'Bengali',
