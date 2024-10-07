@@ -22,6 +22,7 @@ import translation as t
 import nltk
 
 nltk.download('punkt')
+nltk.download('stopwords')
 
 LANGUAGE_CODES = {
     'en': 'English', 'hi': 'Hindi', 'mr': 'Marathi', 'bn': 'Bengali',
