@@ -2,6 +2,7 @@ streamlit==1.38.0
 llama-index
 llama_index.llms.together
 langchain==0.0.318
+langchain_community
 streamlit-authenticator==0.3.3
 PyPDF2
 python-docx==1.1.2
