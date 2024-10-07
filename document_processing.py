@@ -20,6 +20,7 @@ from llama_index.core import Settings
 from utils import load_login_data
 import translation as t
 import nltk
+from nltk.corpus import stopwords
 
 nltk.download('punkt')
 nltk.download('stopwords')
