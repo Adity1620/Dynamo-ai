@@ -19,6 +19,9 @@ import textwrap
 from llama_index.core import Settings
 from utils import load_login_data
 import translation as t
+import nltk
+
+nltk.download('punkt')
 
 LANGUAGE_CODES = {
     'en': 'English', 'hi': 'Hindi', 'mr': 'Marathi', 'bn': 'Bengali',
